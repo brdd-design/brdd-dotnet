@@ -1,0 +1,33 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <PackageId>Brdd.Design.Core</PackageId>
+    <Version>0.2.0</Version>
+    <Authors>Defol Tech</Authors>
+    <Company>Defol Tech</Company>
+    <Description>Business Rule Driven Design (BRDD) core components for .NET. Provides ExecutionContext, ValidationContext, and standard UseCase patterns.</Description>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageProjectUrl>https://brdd.design</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/brdd-design/brdd-dotnet</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>brdd;architecture;design-patterns;business-rules;clean-architecture;ai-first</PackageTags>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageIcon>brdd_logo.png</PackageIcon>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+  </PropertyGroup>
+ 
+   <ItemGroup>
+     <None Include="README.md" Pack="true" PackagePath="\" />
+    <None Include="brdd_logo.png" Pack="true" PackagePath="\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="tests\**" />
+    <EmbeddedResource Remove="tests\**" />
+    <None Remove="tests\**" />
+  </ItemGroup>
+
+</Project>
